@@ -20,7 +20,7 @@ public class messageController {
     @Autowired
     messageRepo repo;
     
-    @CrossOrigin(origins = "https://aksh06.netlify.app/")
+    @CrossOrigin(origins = "https://aksh06.netlify.app/contact")
     @PostMapping("/post")
     public ResponseData addPost(@RequestBody messageModel messageMdl){
         System.out.println(repo.save(messageMdl)); 
